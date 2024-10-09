@@ -15,8 +15,8 @@ CREATE TABLE users (
 
 # Insert sample data into Users table
 try:
-    cursor.execute('INSERT INTO users (username, email) VALUES (?, ?)', ('Alice', 'alice@example.com'))
-    cursor.execute('INSERT INTO users (username, email) VALUES (?, ?)', ('Bob', 'bob@example.com'))
+    cursor.execute('INSERT INTO users (username, email) VALUES (?, ?)', ('Salman', 'salman@example.com'))
+    cursor.execute('INSERT INTO users (username, email) VALUES (?, ?)', ('Khan', 'Khan@example.com'))
     
     # Try inserting a user with a NULL username
     cursor.execute('INSERT INTO users (username, email) VALUES (?, ?)', (None, 'charlie@example.com'))  # This should violate the NOT NULL constraint
