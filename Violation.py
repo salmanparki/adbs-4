@@ -28,7 +28,7 @@ CREATE TABLE orders (
 # Insert sample data into Customers table
 cursor.execute('''
 INSERT INTO customers (customer_name) 
-VALUES ('John Doe')
+VALUES ('Salman')
 ''')
 
 # Try inserting a valid order (customer_id exists)
