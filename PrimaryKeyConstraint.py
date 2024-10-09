@@ -19,23 +19,23 @@ try:
     cursor.execute('''
     INSERT INTO courses (course_id, course_name, department_id) 
     VALUES (?, ?, ?)
-    ''', (101, 'Introduction to Programming', 1))
+    ''', (101, 'English', 1))
 
     cursor.execute('''
     INSERT INTO courses (course_id, course_name, department_id) 
     VALUES (?, ?, ?)
-    ''', (102, 'Data Structures', 1))
+    ''', (102, 'Physics', 1))
 
     cursor.execute('''
     INSERT INTO courses (course_id, course_name, department_id) 
     VALUES (?, ?, ?)
-    ''', (101, 'Advanced Programming', 2))  # Same course_id but different department_id
+    ''', (101, 'Chemistry', 2))  # Same course_id but different department_id
 
     # Try inserting a course with a duplicate composite key
     cursor.execute('''
     INSERT INTO courses (course_id, course_name, department_id) 
     VALUES (?, ?, ?)
-    ''', (101, 'Intro to Programming', 1))  # This should violate the primary key constraint
+    ''', (101, 'English', 1))  # This should violate the primary key constraint
 
     conn.commit()
 except sqlite3.IntegrityError as e:
