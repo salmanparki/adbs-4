@@ -27,9 +27,9 @@ cursor.executemany('''
 INSERT INTO authors (author_name)
 VALUES (?)
 ''', [
-    ('George Orwell',),
-    ('J.K. Rowling',),
-    ('J.R.R. Tolkien',)
+    ('Syed Bashar',),
+    ('Chetan Sharma',),
+    ('Rajamouli',)
 ])
 
 # Insert sample data into Books table
@@ -37,9 +37,9 @@ cursor.executemany('''
 INSERT INTO books (book_title, author_id)
 VALUES (?, ?)
 ''', [
-    ('1984', 1),          # George Orwell
-    ('Harry Potter', 2),   # J.K. Rowling
-    ('The Hobbit', 3)      # J.R.R. Tolkien
+    ('Heart of Last Men', 1),          
+    ('Two Roses', 2),   
+    ('Rajamouli', 3)      
 ])
 
 # Query to check the Books with their respective Authors
