@@ -30,8 +30,8 @@ CREATE TABLE student_courses (
 ''')
 
 # Insert sample data into Students table
-cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Alice',))
-cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Bob',))
+cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Salman',))
+cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Khan',))
 
 # Insert sample data into Courses table
 cursor.execute('INSERT INTO courses (course_name) VALUES (?)', ('Mathematics',))
