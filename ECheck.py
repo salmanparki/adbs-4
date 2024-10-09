@@ -14,8 +14,8 @@ CREATE TABLE employees (
 ''')
 
 # Insert sample data into employees table
-cursor.execute('INSERT INTO employees (employee_name, salary) VALUES (?, ?)', ('Alice', 50000))
-cursor.execute('INSERT INTO employees (employee_name, salary) VALUES (?, ?)', ('Bob', -30000))  # Invalid salary
+cursor.execute('INSERT INTO employees (employee_name, salary) VALUES (?, ?)', ('Salman', 50000))
+cursor.execute('INSERT INTO employees (employee_name, salary) VALUES (?, ?)', ('Khan', -30000))  # Invalid salary
 cursor.execute('INSERT INTO employees (employee_name, salary) VALUES (?, ?)', ('Charlie', 70000))
 
 # Step 2: Create a new employees table with CHECK constraint
