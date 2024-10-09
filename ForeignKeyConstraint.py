@@ -35,8 +35,8 @@ CREATE TABLE student_courses (
 ''')
 
 # Insert sample data into Students table
-cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Alice',))
-cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Bob',))
+cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Salman',))
+cursor.execute('INSERT INTO students (student_name) VALUES (?)', ('Khan',))
 
 # Insert sample data into Courses table
 cursor.execute('INSERT INTO courses (course_name) VALUES (?)', ('Mathematics',))
@@ -44,9 +44,9 @@ cursor.execute('INSERT INTO courses (course_name) VALUES (?)', ('Science',))
 
 # Insert sample data into Student Courses table
 try:
-    cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (1, 1))  # Alice enrolled in Mathematics
-    cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (2, 2))  # Bob enrolled in Science
-    cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (1, 2))  # Alice enrolled in Science
+    cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (1, 1))  #
+    cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (2, 2))  # 
+    cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (1, 2))  # 
 
     # Try inserting a student_course with a non-existing student_id
     cursor.execute('INSERT INTO student_courses (student_id, course_id) VALUES (?, ?)', (3, 1))  # This should violate the foreign key constraint
